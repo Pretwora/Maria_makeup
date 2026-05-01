@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Портфолио визажистки Марии Григорьевой
 
-## Getting Started
+Современный, минималистичный веб-сайт портфолио для визажистки и стилиста Марии Григорьевой. Сайт демонстрирует работы, услуги, отзывы клиентов и позволяет записаться на консультацию.
 
-First, run the development server:
+## 🎨 Особенности
+
+- **Адаптивный дизайн** — полностью responsive на мобильных, планшетах и десктопах
+- **Красивые анимации** — плавные переходы и эффекты при скролле (Framer Motion)
+- **Галерея работ** — с фильтрацией по типам услуг и модальным просмотром
+- **Отзывы клиентов** — интерактивная карусель с 5-звездными рейтингами
+- **Форма записи** — интеграция с Telegram для быстрого бронирования
+- **FAQ** — аккордеоны с часто задаваемыми вопросами
+- **Оптимизирована** — быстрая загрузка, SEO-friendly
+
+## 🛠 Технологический стек
+
+- **Framework**: [Next.js 16](https://nextjs.org/) с App Router
+- **Язык**: [TypeScript](https://www.typescriptlang.org/)
+- **Стили**: [Tailwind CSS](https://tailwindcss.com/)
+- **Анимации**: [Framer Motion](https://www.framer.com/motion/)
+- **Формы**: [React Hook Form](https://react-hook-form.com/)
+- **Иконки**: [React Icons](https://react-icons.github.io/react-icons/)
+
+## 📁 Структура проекта
+
+```
+site/
+├── app/
+│   ├── layout.tsx           # Корневой layout с мета-тегами
+│   ├── page.tsx             # Главная страница со всеми секциями
+│   └── globals.css          # Глобальные стили и Tailwind конфиг
+├── components/
+│   ├── Header.tsx           # Навигация с мобильным меню
+│   ├── Hero.tsx             # Главная секция с CTA
+│   ├── About.tsx            # Раздел "Обо мне" с историей
+│   ├── Gallery.tsx          # Галерея работ с фильтрацией
+│   ├── Services.tsx         # Описание услуг
+│   ├── Pricing.tsx          # Прайс-лист
+│   ├── Testimonials.tsx     # Отзывы клиентов (карусель)
+│   ├── FAQ.tsx              # Часто задаваемые вопросы
+│   ├── Contact.tsx          # Форма записи и контакты
+│   └── Footer.tsx           # Подвал сайта
+├── public/
+│   └── images/              # Портфельные фотографии
+├── package.json             # Зависимости проекта
+└── tsconfig.json            # TypeScript конфигурация
+```
+
+## 🚀 Быстрый старт
+
+### Требования
+- Node.js 18+
+- npm или yarn
+
+### Установка
+
+```bash
+cd site
+npm install
+```
+
+### Разработка
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Откройте [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Сборка
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## 🎯 Основные компоненты
 
-To learn more about Next.js, take a look at the following resources:
+### Gallery.tsx
+Интерактивная галерея с фильтрацией и модальным просмотром.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Pricing.tsx
+Прайс-лист с 8 услугами и выделением популярных.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Testimonials.tsx
+Карусель отзывов клиентов с 5-звездными рейтингами.
 
-## Deploy on Vercel
+### Contact.tsx
+Форма записи и интеграция с Telegram (@maria_makeupspb).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Дизайн
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Основной цвет**: #9d7d5f
+- **Акценты**: #d4a5a5, #c9a961
+- **Фон**: #faf8f7
+- **Шрифты**: Playfair Display, Montserrat, Inter
+
+## 🌐 Развертывание
+
+Рекомендуется использовать **Vercel**:
+1. Подключите GitHub репозиторий
+2. Vercel автоматически развернет сайт
+
+## 📄 Лицензия
+
+MIT License
+
+## 👤 Контакты
+
+**Мария Григорьевой** — визажист и стилист
+
+- 📱 Telegram: [@maria_makeupspb](https://t.me/maria_makeupspb)
+- 📷 Instagram: maria.makeup
+- 📧 Email: maria@example.com
+
+---
+
+Разработано для профессионального представления портфолио.
